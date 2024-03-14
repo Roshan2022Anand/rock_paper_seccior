@@ -1,0 +1,94 @@
+html {
+    height: 100%;
+    width: 100%;
+}
+
+body {
+    background-color: #292929;
+}
+
+header {
+    color: black;
+    text-align: center;
+    text-shadow: 1px 2px white;
+}
+
+#userSide {
+    display: inline-block;
+    margin-top: 1vw;
+    color: white;
+    width: 62vw;
+    height: 30vw;
+
+}
+
+.btn {
+    box-shadow: 5px -4px #c4c4c4;
+    border-radius: 20%;
+    width: 20vw;
+    height: 20vw;
+}
+
+img {
+    border-radius: 20%;
+    width: 100%;
+    height: 100%;
+}
+
+#userChoice {
+    margin: 1px auto;
+    background-color: white;
+    width: 20vw;
+    height: 20vw;
+    border-radius: 20%;
+}
+
+#compSide {
+    text-align: center;
+    display: inline-block;
+    border-radius: 20%;
+    height: 30vw;
+    width: 30vw;
+    animation-name: compImg;
+    animation-direction: alternate-reverse;
+    animation-iteration-count: infinite;
+    animation-duration: 0.9s;
+}
+
+@keyframes compImg {
+    0% {
+        background: url('/rock_paper_seccior/img/rock.png');
+        background-size: cover;
+    }
+
+    50% {
+        background: url('/rock_paper_seccior/img/papper.png');
+        background-size: cover;
+    }
+
+    100% {
+        background: url('/rock_paper_seccior/img/seccior.png');
+        background-size: cover;
+    }
+}
+
+#scoreBoard {
+    width: 100vw;
+}
+
+p {
+    text-align: center;
+    color: white;
+}
+
+#resetBtn {
+    width: 20vw;
+    height: 20vw;
+    display: block;
+    margin: 1px auto;
+    background-color: red;
+    border: none;
+    border-color: black;
+    border-radius: 50%;
+    box-shadow: 3px -3px #b8000096;
+}
